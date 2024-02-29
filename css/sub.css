@@ -1,0 +1,131 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+.nanummyeongjo * {font-family: 'Nanum Myeongjo', serif;
+}
+
+html{scroll-behavior: smooth;}
+
+
+/* Main____________________ */
+#instroduction{background-color: #4194d1;}
+.instroduction{
+  width: 1200px;
+  height: 400px;
+  margin: auto;
+  background: url(../img/company.png) center center no-repeat;
+}
+
+
+/* section1____________________ */
+.s1{
+  position: relative;
+  width: 1200px;
+  height: 2800px;
+  margin: auto;
+}
+
+/* section1_smenu___________________ */
+.smenu{
+  width: 500px;
+  height: 200px;
+  margin: auto;
+}
+.smenu ul{
+  display: flex;
+  justify-content: space-evenly;
+  transform: translateY(170px);
+}
+.smenu ul li{
+  border: 2px solid #444;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  transition: 0.5s;
+}
+.smenu ul li:hover{
+  border: 2px solid rgb(59, 199, 255);
+  color: rgb(59, 199, 255);
+  border-radius: 40px;
+  transform: scale(1.05);
+}
+
+/* section1_title___________________ */
+.title h1{
+  color: #fff;
+  font-size: 30px;
+  transform: translate(30px, 30px);
+}
+
+.stxt1>.title,
+.stxt2>.title,
+.stxt3>.title{
+  position: relative;
+  width: 1200px;
+  height: 400px;
+  border-radius: 30px 0 0 0;
+  margin-top: 100px;
+}
+.title::after{
+  content: '\f078';
+  position: absolute;
+  font-family: fontawesome;
+  font-size: 35px;
+  color: #fff;
+  bottom: 5%;
+  right: 50%;
+  transform: translateX(-50%);
+  animation: title 2s linear infinite;
+}
+@keyframes title {
+  0%{
+    transform: translateY(-30%);
+  }
+  50% {
+    transform: translateY(30%);
+  }
+  100%{
+    transform: translateY(-30%);
+  }
+}
+
+.stxt1>.title{background: url(../img/img24.jpg);}
+.stxt2>.title{background: url(../img/img25.jpg);}
+.stxt3>.title{background: url(../img/img26-1.jpg);}
+
+.fromTopIn
+{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	transform: translate(0,0);
+	opacity: 1.0;
+}
+
+.fromTopOut
+{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	transform: translate(0,-50px);
+	opacity: 0.0;
+}
+
+.text{
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  font-size: 18px;
+  border: 1px solid #b9b9b9;
+  border-top: none;
+  border-radius: 0 0 30px 0;
+}
+.text p{transform: translate(30px, 30px);}
+.text .last{
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  color: gray;
+  font-size: 15px;
+}
+

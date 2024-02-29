@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SM Entertainment</title>
+    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="css/audition.css" />
+    <link rel="stylesheet" href="css/ScrollTrigger.css" />
+
+  </head>
+  <body>
+    <header id="header">
+      <div id="gnb">
+        <ul class="gnb">
+          <li class="topimg">
+            <a href="index.html" class="logo"
+              ><img src="img/headerlogo.png" alt=""
+            /></a>
+          </li>
+          <li class="main">
+            <a href="company.html"><p>COMPANY</p></a>
+            <ul class="sub">
+              <li><a href="company.html">INTRODUCTION</a></li>
+              <li><a href="history.html">HISTORY</a></li>
+            </ul>
+          </li>
+
+          <li class="main">
+            <a href="musician.html"><p>ARTIST</p></a>
+            <ul class="sub">
+              <li><a href="musician.html">MUSICIAN</a></li>
+              <li><a href="actor.html">ACTOR</a></li>
+            </ul>
+          </li>
+
+          <li class="main"><a href="newsroom.html">NEWSROOM</a></li>
+          <li class="main"><a href="audition.html">AUDITION</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="section1">
+      <div class="s1">
+        <div class="content1">
+          <p class="stxt1">
+            WHO THE <br>
+            NEXT?
+          </p>
+
+          <p class="stxt2">
+            SM엔터테인먼트와 함께 <br>
+            글로벌 K-POP을 이루어 나아갈 여러분을 기다립니다.
+          </p>
+
+          <p><img src="img/smlogo-white-big.png" alt=""></p>
+        </div>
+
+        <div class="mouseBox">
+          <div class="mouse"> <!-- 마우스모양 -->
+            <span></span> <!-- 마우스 휠모양 -->
+          </div>
+      
+          <div class="arrows_down"> <!-- 화살표영역 -->
+            <span class="material-symbols-outlined arrow1">expand_more</span>
+            <span class="material-symbols-outlined arrow2">expand_more</span>
+            <span class="material-symbols-outlined arrow3">expand_more</span>
+          </div>
+        </div>
+      </div>  
+    </section>
+
+    <section id="section2">
+      <div class="s2">
+        <div class="s2txt s2txt1" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight">
+          <h1>오디션 절차</h1>
+          <p class="sf"><strong>메일 지원</strong></p>
+          <p><strong>합격자 개별연락</strong></p>
+          <p><strong>최종합격</strong></p>
+        </div>
+
+        <div class="s2txt s2txt2" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight">
+          <h1>지원 자격</h1>
+          <div><strong>남녀노소 제한 없음</strong></div>
+        </div>
+
+        <div class="s2txt s2txt3" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight">
+          <h1>온라인 지원 방법</h1>
+          <div class="email"><strong><a href="">audition@smtown.com</a></strong></div>
+          <div>제출서류: <strong>지원서, 사진(전신, 얼굴), 지원영상(노래, 연기, 춤 등)</strong></div>
+          
+        </div>
+        
+        <div class="s2txt s2txt4" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight">
+          <h1>최종합격</h1>
+          <p>합격자에 한하여 개별 연락드립니다.</p>
+        </div>
+
+        <div class="btn">
+          <p><a href="member.html">지원하기</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="foot">
+        <div class="flogo">
+          <a href="#" class="logo2"
+            ><img src="img/footerlogo.png" alt="flogo"
+          /></a>
+        </div>
+
+        <div class="fmiddle">
+          <strong><a href="#">CONTACT US</a></strong>
+          <ul class="fsub">
+            <li><a href="#">LOCATION</a></li>
+            <li><a href="#">IR CONTACT</a></li>
+            <li><a href="#">비윤리행위 신고</a></li>
+          </ul>
+
+          <ul class="fsub">
+            <li>
+              <a
+                href="https://www.smtown.com/production/sm-classics"
+                target="_blank"
+                >FAMILY SITE</a
+              >
+            </li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">LANGUAGE</a></li>
+          </ul>
+
+          <select name="lang" id="lang">
+            <option value="lang" selected>한국어</option>
+            <option value="lang">English</option>
+            <option value="lang">中文</option>
+            <option value="lang">日本語</option>
+          </select>
+        </div>
+
+        <div>
+          <div class="sns">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
+
+          <div class="exoimg">
+            <img src="img/img17-1.png" alt="2" class="img2" />
+            <img src="img/footerimg.png" alt="1" class="img1" />
+          </div>
+
+          <div class="copy">
+            <p>© SM ENTERTAINMENT. ALL RIGHTS RESERVED.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/sub.js"></script>
+
+<!--Data Scroll PlugIn-->
+<script src="js/ScrollTrigger.min.js"></script>
+<script>
+window.counter = function() {
+  var span = this.querySelector('span');
+  var current = parseInt(span.textContent);
+  
+  span.textContent = current + 1;
+};
+
+document.addEventListener('DOMContentLoaded', function(){
+  ScrollTrigger.init();
+});
+</script>
+  </body>
+</html>

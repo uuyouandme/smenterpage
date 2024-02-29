@@ -1,0 +1,176 @@
+@import url(common.css);
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+body{
+  font-family: NanumSquare;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+
+/* content2 */
+.content1{
+  position: relative;
+  width: 1000px;
+  height: 700px;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.left{
+  position: absolute;
+  width: 320px;
+  height: 700px;
+}
+.left img{border-radius: 30px 0 0 30px;}
+
+/* content2 right */
+.right{
+  position: relative;
+  width: 680px;
+  height: 700px;
+  transform: translateX(46.7%);
+}
+
+/* content2 top */
+.top{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.top h1{font-weight: 800;}
+.right::after{
+  content: '';
+  position: absolute;
+  width: 610px;
+  height: 2px;
+  background-color: #000;
+  top: 12%;
+  left: 5%;
+}
+.top p{
+  transform: translateY(20px);
+
+}
+
+/* content2 title */
+.title{
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+.title p{
+  margin-bottom: 20px;
+}
+
+/* content2 sub */
+.sub{
+  margin-bottom: 20px;
+}
+
+/* content2 sub1 */
+.sub1{
+  position: absolute;
+  left: 30.7%;
+  top: 30%;
+}
+.sub1 select{
+  width: 214px;
+  height: 30px;
+}
+
+/* content2 sub2 */
+.sub2{
+  position: absolute;
+  left: 30.7%;
+  bottom: 57%;
+}
+.sub2 input[type=text]{
+  width: 430px;
+  height: 30px;
+}
+
+/* content2 sub3 */
+.sub3{
+  position: absolute;
+  left: 31%;
+  bottom: 52.7%;
+}
+
+/* content2 sub4 */
+.sub4{
+  position: absolute;
+  right: 5.5%;
+  bottom: 46%;
+  font-size: 13px;
+}
+.sub4 input[type=email]{
+  width: 430px;
+  height: 30px;
+}
+
+/* content2 sub5 */
+.sub5{
+  position: absolute;
+  right: 5.5%;
+  bottom: 40.5%;
+  font-size: 13px;
+}
+.sub5 input[type=text]{
+  width: 430px;
+  height: 30px;
+}
+
+/* content2 sub6 */
+.sub6{
+  position: absolute;
+  right: 9.5%;
+  bottom: 35%;
+  font-size: 13px;
+}
+
+/* content2 sub7 */
+.sub7{
+  position: absolute;
+  right: 5%;
+  bottom: 20%;
+}
+
+/* content2 sub8 */
+.sub8{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 12%;
+}
+.sub8 p strong{color: red;}
+
+/* content2 sub9 */
+.sub9{
+  position: absolute;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3%;
+  width: 410px;
+  justify-content: space-around;
+  font-size: 18px;
+  font-weight: 600;
+}
+.sub9 p {
+  width: 180px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #000;
+}
+
+.sub9 p:first-child{
+  background-color: #000;
+  color: #fff;
+}
+

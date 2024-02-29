@@ -1,0 +1,529 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+.nanummyeongjo * {
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: auto;
+  background-color: #000;
+}
+
+/* section1____________________ */
+.s1{
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  margin: auto;
+}
+
+/* section1_s1title___________________ */
+.s1title{
+  text-align: center;
+  font-size: 50px;
+  transform: translateY(140px);
+  color: #fff;
+}
+
+/* section1_location___________________ */
+.location{
+  transform: translateY(20px);
+  font-size: 15px;
+  color: #fff;
+}
+
+
+/* section1_smenu___________________ */
+.smenu{
+  width: 500px;
+  height: 200px;
+  margin: auto;
+}
+.smenu ul{
+  display: flex;
+  justify-content: space-evenly;
+  transform: translateY(170px);
+}
+.smenu ul li{
+  border: 2px solid #c7c7c7;
+  color: #fff;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  transition: 0.5s;
+  border-radius: 10px 0 10px 0;
+}
+.smenu ul li:first-child{
+  border: 2px solid pink;
+  font-weight: bold;
+  color: pink;
+}
+
+.smenu ul li:last-child:hover{
+  border: 2px solid pink;
+  color: pink;
+  transform: scale(1.05);
+}
+
+
+/* section2___________________ */
+#section2{
+  width: 100%;
+  height: 100%;
+  background: url(../img/aespa.jpg) no-repeat center center fixed;
+  background-size: cover;
+  margin-top: 150px;
+}
+.s2{
+  position: relative;
+  width: 1200px;
+  height: inherit;
+  color: #fff;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.s2 p{
+  position: absolute;
+  font-size: 180px;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+/* section3___________________ */
+#section3{
+  width: 100%;
+  height: 100%;
+}
+.s3{
+  position: relative;
+  width: 1200px;
+  height: inherit;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  color: #fff;
+}
+
+.photo h1{
+  position: absolute;
+  left: 0;
+  top: 15%;
+  font-size: 60px;
+}
+.s3::after{
+  content: '';
+  position: absolute;
+  width: 1200px;
+  height: 1px;
+  background-color: #fff;
+  top: 35%;
+}
+.ptxt{
+  position: absolute;
+  top: 27%;
+}
+
+/* section3_popup__________________ */
+#popup{
+  position: relative;
+	margin:0 auto; 
+	width: 1200px;
+  height: 100%;
+}
+#popup ul{
+  position: absolute;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+}
+
+#popup ul li{
+  position: relative;
+	width:260px; 
+	height:260px;
+  border-radius: 50%;
+}
+#popup ul li:first-child{
+  background: url(../img/karina.jpg) no-repeat center center;
+  background-size: cover;
+}
+#popup ul li:nth-child(2){
+  background: url(../img/winter.jpg) no-repeat center center;
+  background-size: cover;
+}
+#popup ul li:nth-child(3){
+  background: url(../img/jijel.jpg) no-repeat center center;
+  background-size: cover;
+}
+#popup ul li:nth-child(4){
+  background: url(../img/ningning.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#popup ul li a{
+  position: absolute;
+	font-size:30px;
+	font-weight:bold;
+	color:#fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.4s;
+}
+#popup ul li:hover a{opacity: 1;}
+
+/* POPUP BOX */
+.pop{ /*검정배경*/
+	display:none; 
+	position:fixed; 
+	left:0; 
+	top:0;
+	width:100%; 
+	height:100vh; 
+	background:rgba(0,0,0,0.7); 
+	z-index:1000;  /*모든 콘텐츠보다 가장 위에 올라와야 함*/
+	overflow:auto;  /*모달창의 스크롤바를 콘텐츠의 내용길이에 따라 자동으로 나오게 함*/
+}
+
+
+/*c1*/
+.c1{ 
+	margin:0 auto; 
+	width:640px; 
+	height:100%; 
+	color:#fff; 
+  background-color: rgba(0,0,0,0.7); 
+}
+
+.c1 .poptxt1{
+  text-align: center;
+  height: 300px;
+  margin-top: 50px;
+}
+.c1 .poptxt1 h2{
+  position: relative;
+  font-size: 50px;
+  font-family: 'Nanum Myeongjo', serif;
+  text-align: left;
+  color: #fff;
+  transform: translateX(20px);
+}
+.c1 .poptxt1 h2::after{
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 1.5px;
+  background: #fff;
+  left: 0;
+  bottom: -15%;
+}
+
+.c1 .poptxt1 p{
+  display: flex;
+  transform: translate(20px, 50px);
+}
+.c1 .poptxt1 p:last-child{
+  width: 370px;
+  background-color: pink;
+  color: #000;
+}
+
+.poptxt1 .bottom{
+  margin-top: 40px;
+}
+
+/*c2*/
+.c2{ 
+	margin:0 auto; 
+	width:640px; 
+	height:100%; 
+	color:#fff; 
+  background-color: rgba(0,0,0,0.7); 
+}
+
+
+.c2 .poptxt2{
+  text-align: center;
+  height: 300px;
+  margin-top: 50px;
+}
+.c2 .poptxt2 h2{
+  position: relative;
+  font-size: 50px;
+  font-family: 'Nanum Myeongjo', serif;
+  text-align: left;
+  color: #fff;
+  transform: translateX(20px);
+}
+.c2 .poptxt2 h2::after{
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 1.5px;
+  background: #fff;
+  left: 0;
+  bottom: -15%;
+}
+
+.c2 .poptxt2 p{
+  display: flex;
+  transform: translate(20px, 50px);
+}
+.c2 .poptxt2 p:last-child{
+  width: 370px;
+  background-color: pink;
+  color: #000;
+}
+
+.poptxt2 .bottom{
+  margin-top: 40px;
+}
+
+/*c3*/
+.c3{ 
+	margin:0 auto; 
+	width:640px; 
+	height:100%; 
+	color:#fff; 
+  background-color: rgba(0,0,0,0.7); 
+}
+
+.c3 .poptxt3{
+  text-align: center;
+  height: 300px;
+  margin-top: 50px;
+}
+.c3 .poptxt3 h2{
+  position: relative;
+  font-size: 50px;
+  font-family: 'Nanum Myeongjo', serif;
+  text-align: left;
+  color: #fff;
+  transform: translateX(20px);
+}
+.c3 .poptxt3 h2::after{
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 1.5px;
+  background: #fff;
+  left: 0;
+  bottom: -15%;
+}
+
+.c3 .poptxt3 p{
+  display: flex;
+  transform: translate(20px, 50px);
+}
+.c3 .poptxt3 p:last-child{
+  width: 370px;
+  background-color: pink;
+  color: #000;
+}
+
+.poptxt3 .bottom{
+  margin-top: 40px;
+}
+
+/*c4*/
+.c4{ 
+	margin:0 auto; 
+	width:640px; 
+	height:100%; 
+	color:#fff; 
+  background-color: rgba(0,0,0,0.7); 
+}
+
+.c4 .poptxt4{
+  text-align: center;
+  height: 300px;
+  margin-top: 50px;
+}
+.c4 .poptxt4 h2{
+  position: relative;
+  font-size: 50px;
+  font-family: 'Nanum Myeongjo', serif;
+  text-align: left;
+  color: #fff;
+  transform: translateX(20px);
+}
+.c4 .poptxt4 h2::after{
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 1.5px;
+  background: #fff;
+  left: 0;
+  bottom: -15%;
+}
+
+.c4 .poptxt4 p{
+  display: flex;
+  transform: translate(20px, 50px);
+}
+.c4 .poptxt4 p:last-child{
+  width: 370px;
+  background-color: pink;
+  color: #000;
+}
+
+.poptxt4 .bottom{
+  margin-top: 40px;
+}
+
+
+/* section4___________________ */
+#section4{
+  width: 100%;
+  height: 1500px;
+  background: linear-gradient(to bottom, #000, #fff);
+}
+
+.s4{
+  position: relative;
+  width: 1200px;
+  height: inherit;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  color: #fff;
+}
+
+.vd h1{
+  position: absolute;
+  right: 0;
+  top: 12%;
+  font-size: 60px;
+}
+.s4::after{
+  content: '';
+  position: absolute;
+  width: 1200px;
+  height: 1px;
+  background-color: #fff;
+  top: 25%;
+}
+.vtxt{
+  position: absolute;
+  width: 1200px;
+  text-align: right;
+  top: 20%;
+  left: 0;
+}
+
+.vd iframe{
+  border-radius: 30px 0 30px 0;
+  opacity: 0.7;
+  transition: 0.4s;
+  border: none;
+}
+.vd iframe:hover{
+  opacity: 1;
+  transform: scale(1.02);
+  box-shadow: rgba(255, 29, 66, 0.932) 0px 2px 4px 0px, rgba(255, 61, 93, 0.849) 0px 2px 16px 0px;
+}
+.vd1{
+  position: absolute;
+  left: 0;
+  top: 30%;
+}
+.vd2{
+  position: absolute;
+  right: 0;
+  top: 30%;
+}
+.vd3{
+  position: absolute;
+  left: 0;
+  bottom: 23.7%;
+}
+.vd4{
+  position: absolute;
+  right: 32.5%;
+  bottom: 23.7%;
+}
+.vd5{
+  position: absolute;
+  right: 0;
+  bottom: 23.7%;
+}
+
+.fromTopIn
+{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,0);
+	opacity: 1.0;
+}
+
+.fromTopOut
+{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,-100px);
+	opacity: 0.0;
+}
+
+
+/* footer___________________ */
+footer{
+  border-bottom: 35px solid #000;
+  background-color: #fff;
+}
+.foot{
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  margin: auto;
+}
+.logo2{
+  position: absolute;
+  top: 8%;
+  left: 2%;
+}
+
+.fmiddle{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: translateY(120px);
+  font-size: 14px;
+}
+.fmiddle strong{
+  transform: translate(100px, -15px);
+}
+.fmiddle li{
+  font-family: 'Nanum Myeongjo', serif;
+  line-height: 20px;
+}
+.fmiddle select{
+  transform: translate(-150px, 17px);
+}
+.copy{
+  position: absolute;
+  text-align: center;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+}
+
+.exoimg img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(35px);
+}
+.exoimg:hover .img1{opacity: 0;}

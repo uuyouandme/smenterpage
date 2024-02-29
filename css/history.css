@@ -1,0 +1,248 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+.nanummyeongjo * {
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Main____________________ */
+#instroduction {
+  background-color: #4194d1;
+}
+.instroduction {
+  width: 1200px;
+  height: 400px;
+  margin: auto;
+  background: url(../img/company.png) center center no-repeat;
+}
+
+/* section1____________________ */
+
+.s1 {
+  position: relative;
+  width: 1200px;
+  height: 9200px;
+  margin: auto;
+}
+
+/* section1_s1title___________________ */
+.s1title {
+  text-align: center;
+  font-size: 50px;
+  transform: translateY(140px);
+}
+
+/* section1_location___________________ */
+.location {
+  transform: translateY(20px);
+  font-size: 15px;
+  color: gray;
+}
+
+/* section1_smenu___________________ */
+.smenu {
+  width: 500px;
+  height: 200px;
+  margin: auto;
+}
+.smenu ul {
+  display: flex;
+  justify-content: space-evenly;
+  transform: translateY(170px);
+}
+.smenu ul li {
+  border: 2px solid #c7c7c7;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  transition: 0.5s;
+  border-radius: 10px 0 10px 0;
+}
+.smenu ul li:last-child {
+  border: 2px solid rgb(59, 199, 255);
+  font-weight: bold;
+  color: rgb(59, 199, 255);
+}
+
+.smenu ul li:first-child:hover {
+  border: 2px solid rgb(59, 199, 255);
+  color: rgb(59, 199, 255);
+  transform: scale(1.05);
+}
+
+/* section1_s2title___________________ */
+.s2title{
+  position: relative;
+  width: 1200px;
+  height: 200px;
+  text-align: center;
+  font-size: 50px;
+  transform: translateY(650px);
+  font-family: 'Nanum Myeongjo', serif;
+  animation: s2title 4s linear infinite;
+}
+@keyframes s2title{
+  0%{opacity: 1;}
+  50%{opacity: 0.2;}
+  100%{opacity: 1;}
+}
+
+.s2title p{font-size: 20px;}
+
+.s2title::before,
+.s2title::after{
+  position: absolute;
+  font-family: fontawesome;
+  color: gray;
+  opacity: 0.7;
+}
+.s2title::before{
+  content: '\f10d';
+  right: 100%;
+}
+.s2title::after{
+  content: '\f10e';
+  left: 100%;
+  bottom: 40%;
+}
+
+/* section1_gallery___________________ */
+.gallery{
+  position: relative;
+  height: 400px;
+  display: flex;
+  margin-top: 8%;
+}
+.gallery::after{
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 300px;
+  background-color: #4444449d;
+  top: 130%;
+  right: 50%;
+}
+
+.gallery li{
+  flex: 1;
+  position: relative;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.gallery li:last-child{border-right: none;}
+
+.gallery li:nth-child(1){
+  background: url(../img/sm1.PNG) no-repeat center center;
+  border-radius: 30px 0 0 0;}
+.gallery li:nth-child(2){background: url(../img/sm2.PNG) no-repeat center center;}
+.gallery li:nth-child(3){background: url(../img/sm3.PNG) no-repeat center center;}
+.gallery li:nth-child(4){
+  background: url(../img/sm4.PNG) no-repeat center center;
+  border-radius: 0 0 30px 0;
+}
+.gallery li:hover{
+  flex: 3;
+  filter: grayscale(1);
+}
+
+.content h2{
+  line-height: 250px;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 40px;
+}
+
+/* section1_contents___________________ */
+.contents{
+  height: 7100px;
+  position: relative;
+  margin-top: 800px;
+  font-size: 18px;
+  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.left,
+.right{
+  padding: 100px 0;
+}
+.left{text-align: left;animation: ltr 1s linear both;}
+.right{text-align: right;animation: rtl 1s linear both;}
+
+.ltxt{
+  transform: translateX(40px);
+}
+.rtxt{
+  transform: translateX(-40px);
+}
+
+.ltxt h1,
+.rtxt h1{
+  color: #8f8f8f;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 120px;
+  font-weight: bold;
+}
+.ltxt h1:hover,
+.rtxt h1:hover{color: #67c0ff;}
+
+/* section1_contents_center__________________ */
+.center{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.line{
+  position: absolute;
+  width: 3px;
+  height: 6650px;
+  background: #67c0ff;
+  transform: translateY(200px);
+}
+.cc{position: absolute;}
+
+/* section1_contents_circle__________________ */
+.cirle{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 8px solid #67c0ff;
+  background-color: #fff;
+  margin-top: 390px;
+}
+.cirle:first-child,
+.cirle:nth-child(2)
+{transform: translateY(-200px);}
+
+.cirle:nth-child(3),
+.cirle:nth-child(4)
+{transform: translateY(-220px);}
+
+.cirle:nth-child(5),
+.cirle:nth-child(6)
+{transform: translateY(-200px);}
+
+.cirle:nth-child(7),
+.cirle:nth-child(8)
+{transform: translateY(-280px);}
+
+.cirle:nth-child(9){transform: translateY(-90px);}
+
+.cirle:nth-child(10),
+.cirle:nth-child(11),
+.cirle:nth-child(12)
+{transform: translateY(-30px);}
+
+.cirle:nth-child(13),
+.cirle:nth-child(14){transform: translateY(50px);}
+
+.cirle:nth-child(15),
+.cirle:nth-child(16)
+{transform: translateY(70px);}
+

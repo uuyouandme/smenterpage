@@ -1,0 +1,233 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+.nanummyeongjo * {
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+html {scroll-behavior: smooth;}
+
+
+/* main____________________ */
+main{
+  width: 100%;
+  height: 400px;
+  background: url(../img/background4.png) center center no-repeat fixed;
+  background-size: cover;
+  font-family: 'Nanum Myeongjo', serif;
+}
+.newsmain{
+  position: relative;
+  width: 1200px;
+  height: inherit;
+  margin: auto;
+}
+
+.newstitle{
+  position: absolute;
+  color: #fff;
+  font-size: 80px;
+  line-height: 85px;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50% , 50%);
+}
+.newstitle p:first-child{
+  height: 80px;
+  line-height: 85px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #ffffffd5;
+  border-radius: 20px 0 20px 0;
+  color: #000;
+}
+
+/* section1____________________ */
+#section1{
+  position: relative;
+  width: 1200px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* section1_location___________________ */
+.location {
+	position: absolute;
+  transform: translateY(20px);
+  font-size: 15px;
+  color: gray;
+	left: 0;
+}
+
+
+/* section2_____________________ */
+#gallery{
+	width:1200px;
+	height:600px;
+	background:#fff;
+	position:relative;
+	margin: auto;
+}
+.largeImg li{
+	display:none;
+	position:absolute;
+	top:50%;
+	left:50%;
+  transform: translate(-50%, -50%);
+}
+.largeImg li:first-child{display:block;}
+
+.left_btn,
+.right_btn{
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+.left_btn{left:0;}
+.right_btn{right:0;}
+
+.imgText li{
+	display:none;
+	position:absolute;
+	bottom:50px;
+	left:50px;
+}
+.imgText li:first-child{display:block;}
+.imgText li strong{
+  position: relative;
+	color:#fff;
+	font-size:25px;
+  cursor: pointer;
+}
+.imgText li strong:hover{text-decoration: underline;}
+
+.imgText li{
+  position: absolute;
+  top: 12%;
+  left: 11%;
+}
+
+
+/* section3_____________________ */
+#section3{
+  width: 100%;
+  height: 1500px;
+  background: url(../img/background4.png) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  margin: 100px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.s3{
+  position: relative;
+  width: 1200px;
+  height: 100%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.s3 h1{
+  position: absolute;
+  font-size: 90px;
+  font-family: 'Nanum Myeongjo', serif;
+  top: 7%;
+}
+.s3 h1::before{
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  width: 1200px;
+  height: 2px;
+  top: 110%;
+}
+.s3 h1::after{
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  width: 1200px;
+  height: 2px;
+  top: 900%;
+  left: 0;
+}
+
+.s3img1 img,
+.s3img2 img,
+.s3img3 img{
+  position: relative;
+  transition: .3s ease-in-out;
+}
+
+.s3img1 li,
+.s3img2 li,
+.s3img3 li{
+  position: relative;
+}
+.s3img1 li:before,
+.s3img2 li:before,
+.s3img3 li:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.s3img1 li:hover:before,
+.s3img2 li:hover:before,
+.s3img3 li:hover:before{width: 100%;}
+
+.s3img1 li{
+  position: absolute;
+  top: 20%;
+}
+.s3img2 li{
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+.s3img3 li{
+  position: absolute;
+  top: 43%;
+  right: 0;
+}
+
+.s3txt1 {transform: translate(20px, 20px);}
+.s3txt2 {transform: translate(-50px, 20px);}
+.s3txt3 {transform: translate(-205px, 20px);}
+
+.s3img1:hover img,
+.s3img2:hover img,
+.s3img3:hover img{
+  transform: scale(1.02);
+  filter: grayscale();
+  border-radius: 50px 0 50px 0;
+}
+
+.btn{
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+} 
+.btn p{
+  border: 1px solid #fff;
+  border-radius: 40px;
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  transition: 0.4s;
+}
+.btn p:hover{
+  background-color: #fff;
+  color: #000;
+}
